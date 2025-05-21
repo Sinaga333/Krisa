@@ -1,5 +1,5 @@
 QT       += core gui sql
-QT       += network
+#QT       += network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 CONFIG += c++17
@@ -11,7 +11,7 @@ CONFIG += c++17
 SOURCES += \
     base.cpp \
     boost.cpp \
-    client.cpp \
+    #client.cpp \
     create_user.cpp \
     main.cpp \
     mainwindow.cpp \
@@ -22,7 +22,7 @@ SOURCES += \
 HEADERS += \
     base.h \
     boost.h \
-    client.h \
+    #client.h \
     create_user.h \
     mainwindow.h \
     start.h \
@@ -39,10 +39,7 @@ qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
 
-DISTFILES += \
-    libcrypto-1_1-x64.dll \
-    libmysql.dll \
-    libssl-1_1-x64.dll
+DISTFILES +=
 
 RESOURCES += \
     pikcha.qrc
