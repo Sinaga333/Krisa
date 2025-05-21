@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>832</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">
+
+QPushButton {
+    background-color: rgb(255, 170, 0); /* Цвет фона кнопки */
+    border: 2px solid darkred; /* Цвет и толщина рамки */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px 20px; /* Внутренние отступы (сверху/снизу, слева/справа) */
+    color: black; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    font-size: 16px; /* Размер шрифта */
+}
+
+QPushButton:hover {
+    background-color: darkred; /* Цвет фона при наведении */
+}
+
+QPushButton:pressed {
+    background-color: crimson; /* Цвет фона при нажатии */
+    padding-left: 12px; /* Увеличение отступа при нажатии */
+    padding-top: 12px; /* Увеличение отступа при нажатии */
+}
+QLabel {
+    background-color: white; /* Цвет фона */
+    border: 2px solid purple; /* Фиолетовая рамка */
+    border-radius: 10px; /* Закругленные углы */
+    padding: 10px; /* Внутренние отступы */
+    color: black; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    font-size: 16px; /* Размер шрифта */
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>310</y>
+      <width>831</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QScrollArea" name="scrollArea">
+       <property name="styleSheet">
+        <string notr="true">
+    font-size: 13px; /* Размер шрифта */
+	 padding: 3px 5px; 
+</string>
+       </property>
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>400</width>
+          <height>147</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+     <item>
+      <widget class="QScrollArea" name="scrollArea_2">
+       <property name="widgetResizable">
+        <bool>true</bool>
+       </property>
+       <widget class="QWidget" name="scrollAreaWidgetContents_2">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>409</width>
+          <height>157</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>220</y>
+      <width>101</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="text">
+     <string>гаф</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lable_coins_per_click">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>285</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border: 2px solid purple; /* Фиолетовая рамка */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 3px; /* Внутренние отступы */
+    color: black; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    font-size: 10px; /* Размер шрифта */
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lable_coins">
+    <property name="geometry">
+     <rect>
+      <x>370</x>
+      <y>10</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lable_coins_per_sec">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>90</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+    border: 2px solid purple; /* Фиолетовая рамка */
+    border-radius: 5px; /* Закругленные углы */
+    padding: 3px; /* Внутренние отступы */
+    color: black; /* Цвет текста */
+    font-weight: bold; /* Жирный текст */
+    font-size: 10px; /* Размер шрифта */
+}</string>
+    </property>
+    <property name="text">
+     <string>0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pic">
+    <property name="geometry">
+     <rect>
+      <x>-100</x>
+      <y>-120</y>
+      <width>971</width>
+      <height>1300</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"> padding: 0px; </string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <zorder>pic</zorder>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>pushButton</zorder>
+   <zorder>lable_coins_per_click</zorder>
+   <zorder>lable_coins</zorder>
+   <zorder>lable_coins_per_sec</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>832</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

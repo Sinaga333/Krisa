@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/fon">
+        <file>krisa_fon.png</file>
+        <file>krisulya.jpg</file>
+    </qresource>
+</RCC>
